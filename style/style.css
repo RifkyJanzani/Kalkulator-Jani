@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.calculator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ecf0f3;
+}
+
+.wrapper {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+}
+
+.wrapper p{
+    color: #727272;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+}
+
+.box .field input{
+    font-size: 18px;
+    color: #555;
+    padding: 20px;
+    width: 90%;
+    border-radius: 15px;
+    border: none; 
+    background-color: #f0f0f0; 
+    box-shadow: 
+        inset 3px 3px 3px rgba(0, 0, 0, 0.1), 
+        inset -3px -3px 3px rgba(255, 255, 255, 0.5); 
+    margin-bottom: 15px;
+}
+
+.box .btn{
+    padding: 5px;
+}
+
+.box .btn input {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+    width: calc(50% - 5px);
+    background-color: #1472ff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box .btn input:hover {
+    background-color: #0252ca;
+}
+
+
+
+.hasil {
+    margin-top: 10px;
+    font-size: 45px;
+    font-weight: 500;
+    background-color: #f0f0f0; 
+    box-shadow: 
+        inset 3px 3px 3px rgba(0, 0, 0, 0.1), 
+        inset -3px -3px 3px rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    width: 95%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hasil-text {
+    color: #333;
+}
